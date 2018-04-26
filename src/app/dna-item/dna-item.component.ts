@@ -13,6 +13,7 @@ export class DnaItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
