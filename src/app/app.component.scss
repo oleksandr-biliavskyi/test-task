@@ -29,6 +29,10 @@
       app-dna-item {
         flex-grow: 1;
       }
+
+      app-dna-item + app-dna-item {
+        margin-left: 24px;
+      }
     }
   }
 }
