@@ -1,0 +1,90 @@
+{
+  "yourDna": [
+    {
+      "sub_regions": [
+        {
+          "sub_regions": [
+            {
+              "region": "irish",
+              "value": 0
+            },
+            {
+              "region": "british",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "sub_regions": [
+            {
+              "region": "spain",
+              "value": 47
+            },
+            {
+              "region": "portugal",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sub_regions": [
+        {
+          "sub_regions": [
+            {
+              "region": "chad",
+              "value": 51
+            },
+            {
+              "region": "mali",
+              "value": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "otherDna": [
+    {
+      "sub_regions": [
+        {
+          "sub_regions": [
+            {
+              "region": "irish",
+              "value": 3
+            },
+            {
+              "region": "british",
+              "value": 50
+            }
+          ]
+        },
+        {
+          "sub_regions": [
+            {
+              "region": "spain",
+              "value": 47
+            },
+            {
+              "region": "portugal",
+              "value": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sub_regions": [
+        {
+          "sub_regions": [
+            {
+              "region": "chad",
+              "value": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
