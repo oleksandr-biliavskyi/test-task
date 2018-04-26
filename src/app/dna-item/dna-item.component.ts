@@ -1,4 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {IDnaItem} from '../model';
+import {DnaFacade} from '../state/dna.facade';
 
 @Component({
   selector: 'app-dna-item',
@@ -8,9 +10,15 @@ import {Component, Input, OnInit} from '@angular/core';
 export class DnaItemComponent implements OnInit {
 
   @Input() header: string;
-  @Input() data: any[];
+  @Input() data: IDnaItem[];
 
-  constructor() { }
+  itemCollapsed$ = this.facade.itemCollapsed$;
+
+  constructor(private facade: DnaFacade) { }
+
+  toggleItem() {
+    this.itemCollapsed$.next(!this.itemCollapsed$.getValue());
+  }
 
   ngOnInit() {
 

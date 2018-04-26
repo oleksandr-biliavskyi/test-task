@@ -1,7 +1,10 @@
-<header>
+<header (click)="toggleItem()">
   <span>{{header}}</span>
 </header>
 
-<article>
-  <span *ngFor="let dataItem of data">Region: {{dataItem.region}}, Percentage: {{dataItem.value}}</span>
+<article [ngStyle]="{'visibility': (itemCollapsed$ | async) ? 'hidden' : 'visible'}">
+  <span *ngFor="let dataItem of data">
+    <ng-container *ngIf="dataItem.matched">[EQUAL]</ng-container>
+    Region: {{dataItem.region}}, Percentage: {{dataItem.value}}
+  </span>
 </article>
